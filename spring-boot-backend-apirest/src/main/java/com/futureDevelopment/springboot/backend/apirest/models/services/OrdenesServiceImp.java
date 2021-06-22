@@ -35,4 +35,11 @@ public class OrdenesServiceImp implements IOrdenesService {
 		return (List<Ordenes>) ordenesDao.findAll();
 	}
 
+	@Override
+	public void delete(Long id) {
+		// TODO Auto-generated method stub
+		ordenesDao.deleteById(id);
+		
+	}
+
 }

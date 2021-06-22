@@ -12,14 +12,12 @@ import javax.persistence.Table;
 @Table(name = "ordenesArticulos")
 public class OrdenesArticulos implements Serializable {
 
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long codigo;
-	private Integer idArticulo;
-	private Integer idCliente;
-
-
+	private Integer idOrdenes;
+	private Long idArticulo;
+	private Integer cantidad;
 
 	public Long getCodigo() {
 		return codigo;
@@ -29,22 +27,30 @@ public class OrdenesArticulos implements Serializable {
 		this.codigo = codigo;
 	}
 
-	public Integer getIdArticulo() {
+	public Integer getIdOrdenes() {
+		return idOrdenes;
+	}
+
+	public void setIdOrdenes(Integer idOrdenes) {
+		this.idOrdenes = idOrdenes;
+	}
+
+	public Long getIdArticulo() {
 		return idArticulo;
 	}
 
-	public void setIdArticulo(Integer idArticulo) {
+	public void setIdArticulo(Long idArticulo) {
 		this.idArticulo = idArticulo;
 	}
 
-	public Integer getIdCliente() {
-		return idCliente;
+	public Integer getCantidad() {
+		return cantidad;
 	}
 
-	public void setIdCliente(Integer idCliente) {
-		this.idCliente = idCliente;
+	public void setCantidad(Integer cantidad) {
+		this.cantidad = cantidad;
 	}
-	
+
 	/**
 	 * 
 	 */

@@ -11,6 +11,6 @@ INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Dr. James', 'G
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Magma', 'Lee', 'magma.lee@gmail.com', '2018-03-04');
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Tornado', 'Roe', 'tornado.roe@gmail.com', '2018-03-05');
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Jade', 'Doe', 'jane.doe@gmail.com', '2018-03-06');
-INSERT INTO articulos (nombre, precio_unitario) VALUES('Camiseta',27.89);
-INSERT INTO articulos (nombre, precio_unitario) VALUES('pantalon',45.89);
-INSERT INTO articulos (nombre, precio_unitario) VALUES('medias',4.89);
+INSERT INTO articulos (nombre, precio_unitario,stock) VALUES('Camiseta',27.89,10);
+INSERT INTO articulos (nombre, precio_unitario,stock) VALUES('pantalon',45.89,11);
+INSERT INTO articulos (nombre, precio_unitario,stock) VALUES('medias',4.89,12);

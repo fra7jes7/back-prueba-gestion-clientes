@@ -11,5 +11,7 @@ public interface IOrdenesService {
 	public Ordenes save(Ordenes orden);
 	
 	public Ordenes findById(Long id);
+	
+	public void delete(Long id);
 
 }

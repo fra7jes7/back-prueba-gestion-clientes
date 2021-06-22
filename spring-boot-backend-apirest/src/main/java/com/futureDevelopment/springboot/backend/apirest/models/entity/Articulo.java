@@ -20,6 +20,8 @@ public class Articulo implements Serializable{
 
 	private String nombre;
 	private Double precioUnitario;
+	
+	private int stock;
 
 
 	public Long getCodigo() {
@@ -47,6 +49,18 @@ public class Articulo implements Serializable{
 		this.precioUnitario = precioUnitario;
 	}
 	
+	
+	
+	public int getStock() {
+		return stock;
+	}
+
+	public void setStock(int stock) {
+		this.stock = stock;
+	}
+
+
+
 	/**
 	 * 
 	 */
